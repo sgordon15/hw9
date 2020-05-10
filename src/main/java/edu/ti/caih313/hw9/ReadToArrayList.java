@@ -25,8 +25,9 @@ public class ReadToArrayList {
                 for(int i = 0; i <stringArray.length; i++) {
                     String s = stringArray[i];
                     words.add(s);
-                    sentencesList.add(words);
+
                 }
+                sentencesList.add(words);
             }
         } catch (FileNotFoundException e) {
 
@@ -54,11 +55,7 @@ public class ReadToArrayList {
 
         ArrayList desireSentence = sentencesList.get( sentenceNumber-1 );
         Object desiredWord = desireSentence.get( wordNumber -1);
-        System.out.println("the word on sentence "+ sentenceNumber + "at position" +wordNumber+ "is" +desiredWord);
+        System.out.println("the word on sentence "+ sentenceNumber + "at position" + wordNumber + "is" + desiredWord);
     }
 }
 
-
-    //hi my mane is sara
-       // i love to read
-       // I also like chocolate

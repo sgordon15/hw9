@@ -20,12 +20,9 @@ public class ReadToArrayList {
             while (inputStream.hasNextLine()) {
                 ArrayList<String> words = new ArrayList<String>();
                 String line = inputStream.nextLine();
-
                 String stringArray[] = line.split(" ");
                 for(int i = 0; i <stringArray.length; i++) {
-                    String s = stringArray[i];
-                    words.add(s);
-
+                    words.add(stringArray[i]);
                 }
                 sentencesList.add(words);
             }
